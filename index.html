@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>XML LOader</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">XML LOader</h1>
+            <div class="row row-eq-height">
+                <div class="col-12 col-md-6 text-left p-2 d-flex ">
+                    <div class="w-100 border border-info p-2">
+                        <button class="form-control btn btn-info " id="getfiles">GetFiles</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 text-left p-2">
+                   
+                        <div class="w-100 border border-info p-2  d-flex ">
+                            <input type="file" class="form-control border-0 px-0 " id="inputFile" name="inputFile">
+                            <button class="form-control btn btn-info mb-2" id="postfile">PostFile</button>
+
+                        </div>
+                   
+                </div>
+
+            </div>
+            
+            
+            
+                 <h2 class="text-center">
+                Uplodaed files
+                </h2>           
+            <script id="filesdata" type="text/x-jquery-tmpl">
+                
+            
+                <div class="col-12 col-md-4 p-2 ">
+                <div class="w-100 border border-info p-2">
+                ID: ${Id}<br />
+                Filename: ${filename}<br />
+                TS: ${filedate}<br />
+              
+                GetFile: <a id="${filename}" class="receivefile btn btn-outline-info">GetFile</a>
+                </div>
+                </div>
+
+
+            </script>
+            <div id="filesdatarow" class="row p-2">
+                
+            </div>
+
+            
+            
+            
+<!--            <div id="filesdatarow" class="row d-none">
+                <div class="col-12 border border-info">
+                    <h2 class="text-center">Uplodaed files</h2>
+                    
+                    <ul id="filesdata"></ul>
+                                         
+                    </table>
+                </div>
+            </div>-->
+            
+             
+            
+            
+            <div id="table" class="row">
+                <div class="col-12">
+                    
+                    <ul id="filedata"></ul>
+                    
+                    <table id="example" class="display" style="width:100%">
+                       
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+
+    </body>
+</html>
